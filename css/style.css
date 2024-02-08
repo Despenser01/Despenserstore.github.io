@@ -97,7 +97,6 @@ section{
     font-size: 2.5rem;
     font-weight: bolder;
     color: var(--black);
-    text-decoration: none;
 }
 
 .header .header-1 .logo i{
@@ -141,7 +140,6 @@ section{
     margin-left: 1.5rem;
     color: var(--black);
     cursor: pointer;
-    text-decoration: none;
 }
 
 .header .header-1 .icons div:hover,
@@ -167,7 +165,6 @@ section{
    display: inline-block;
    padding: 1.2rem;
    font-size: 1.7rem;
-   text-decoration: none;
 }
 
 .header .header-2 .navbar a:hover{
@@ -216,12 +213,6 @@ section{
     flex: 1 1 42rem;
 }
 
-.home .row .content .btn{
-    color: #fff;
-    background-color: #219150;
-    padding: 1rem;
-}
-
 .home .row .books-slider{
     flex: 1 1 42rem;
     text-align: center;
@@ -263,45 +254,10 @@ section{
 .featured .featured-slider{
      width: 95%;
      height: 60vh;
-     margin: 0 auto;
-     /* display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
      /* overflow: hidden; */
-     /* overflow-x: scroll; */
-}
-
-.slider-container {
-    display: flex;
-    transition: transform 5s ease; /* Enable smooth transition */
-}
-
-.slide {
-    min-width: 20%;
-    box-sizing: border-box; 
-    margin: -3% !important;
-}
-
-.slide img {
-    width: 50%;
-    border-radius: 8px;
-}
-
-.controls {
-    position: absolute;
-    top: 160%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-90%);
-}
-
-.control-btn {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
+     overflow-x: scroll;
 }
 
 /* .featured .featured-slider{
@@ -394,7 +350,7 @@ section{
     text-decoration: line-through;
 }
 
-/* .swiper-button-next,
+.swiper-button-next,
 .swiper-button-prev{
     border: var(--border-hover);
     height: 4rem;
@@ -412,7 +368,7 @@ section{
 .swiper-button-prev:hover{
     background: var(--black);
     color: #fff;
-} */
+}
 
 .newsletter{
     background: url(../image/main\ book\ 2.png) no-repeat;

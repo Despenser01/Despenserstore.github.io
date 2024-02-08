@@ -56,28 +56,6 @@ var swiper = new Swiper(".books-slider", {
          },
     });   
 
-    let currentSlide = 0;
-
-        function showSlide(index) {
-            const slider = document.getElementById('slider');
-            const slideWidth = document.querySelector('.slide').offsetWidth;
-            slider.style.transform = `translateX(-${index * slideWidth}px)`;
-            currentSlide = index;
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % document.querySelectorAll('.slide').length;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
-            showSlide(currentSlide);
-        }
-
-        // Automatic slide change every 3 seconds
-        setInterval(nextSlide, 3000);
-
 // var swiper = new Swiper(".featured-slider", {
 //     spaceBetween: 10,
 //     loop:true,
