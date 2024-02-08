@@ -1,0 +1,33 @@
+<!-- custom css file link -->
+<link rel="stylesheet" href="loginform/style.css">
+
+<!-- login form -->
+
+<div class="login-container">
+    <a href="Index.html" class="close-btn" onclick="closeLoginForm()">&times;</a>
+    <h2>Login Form</h2>
+    <form class="login-form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember me">
+            <label for="remember-me"> remember me</label>
+         </div>
+        <button type="submit" class="login-btn">Login</button>
+        <p>forget password ? <a href="#">click here</a></p>
+       <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
+</div>
+
+<script>
+    function closeLoginForm() {
+        // You can customize this function to hide or remove the login form
+        document.querySelector('.login-container').style.display = 'none';
+    }
+</script>
